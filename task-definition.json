@@ -9,14 +9,14 @@
         "entryPoint": null,
         "portMappings": [
           {
-            "hostPort": 80,
+            "hostPort": 81,
             "protocol": "tcp",
             "containerPort": 80
           }
         ],
         "command": null,
         "linuxParameters": null,
-        "cpu": 0,
+        "cpu": 100,
         "environment": [],
         "resourceRequirements": null,
         "ulimits": null,
@@ -25,11 +25,11 @@
         "workingDirectory": null,
         "secrets": null,
         "dockerSecurityOptions": null,
-        "memory": null,
+        "memory": 256,
         "memoryReservation": null,
         "volumesFrom": [],
         "stopTimeout": null,
-        "image": "968909595777.dkr.ecr.us-east-1.amazonaws.com/jaroldan-library",
+        "image": "968909595777.dkr.ecr.us-east-1.amazonaws.com/jaroldan-library:176f1a30b3291c06c5eddbfd23e1644e5d16bd29",
         "startTimeout": null,
         "firelensConfiguration": null,
         "dependsOn": null,
@@ -56,7 +56,7 @@
       "EXTERNAL",
       "EC2"
     ],
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:968909595777:task-definition/nginx-aws:2",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:968909595777:task-definition/nginx-aws:6",
     "family": "nginx-aws",
     "requiresAttributes": [
       {
@@ -73,7 +73,7 @@
     "networkMode": null,
     "runtimePlatform": null,
     "cpu": "1024",
-    "revision": 2,
+    "revision": 6,
     "status": "ACTIVE",
     "inferenceAccelerators": null,
     "proxyConfiguration": null,
